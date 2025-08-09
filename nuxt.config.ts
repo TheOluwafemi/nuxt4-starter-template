@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@nuxt/image'],
+  image: {
+    format: ['webp'],
+    quality: 80
+  },
 })
