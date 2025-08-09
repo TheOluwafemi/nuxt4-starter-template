@@ -4,14 +4,28 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  css: ['~/assets/styles/tailwind.css'],
+  css: ['~/assets/styles/main.css'],
 
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ['@nuxt/eslint', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/fonts'],
   image: {
     format: ['webp'],
-    quality: 80
+    quality: 80,
+  },
+  fonts: {
+    families: [
+      {
+        name: 'Inter',
+        provider: 'google',
+        weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      },
+      {
+        name: 'Work Sans',
+        provider: 'google',
+        weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      },
+    ],
   },
 })
