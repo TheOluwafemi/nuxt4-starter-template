@@ -77,6 +77,7 @@ The template includes pre-configured settings for:
 - **Tailwind CSS** with custom font configuration
 - **ESLint** with Vue and TypeScript rules
 - **Pinia** for state management
+- **VueUse** with essential composition utilities
 - **Google Fonts** (Inter and Work Sans) with optimization
 
 ## CSS and Styling
