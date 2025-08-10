@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/fonts'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/fonts', '@pinia/nuxt'],
   image: {
     format: ['webp'],
     quality: 80,
